@@ -3,8 +3,6 @@ const loginInput = document.querySelector("#login-form input");
 const link = document.querySelector("a");
 const greeting = document.querySelector("#greeting");
 
-console.log(loginInput.value);
-
 const HIDDEN_CLASSNAME = "hidden";
 const USERNAME_KEY = "username"
 
@@ -23,7 +21,6 @@ function paintGreeting(username) {
 
 const savedUsername = localStorage.getItem(USERNAME_KEY);
 
-console.log(savedUsername);
 
 if(savedUsername === null) {
     loginForm.classList.remove(HIDDEN_CLASSNAME);
